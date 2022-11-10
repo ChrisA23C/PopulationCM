@@ -1,0 +1,61 @@
+							Population Change Model (PopulationCM)
+
+									Reference
+
+General description
+
+	PopulationCM is a program for predicting population changes.The program allows you to predict the population size in the future, as well as visualize this data
+in the form of a graph.
+
+Menu
+
+	File
+		Open
+			This function is needed to load input data into the program. The input file format is .csv. The table should contain two columns - the first 
+			should contain the years, the second should contain the corresponding population size. There can be as many lines as you like, but the first 
+			line must contain the column headings. When the file is uploaded, a message will appear at the bottom of the main window. Shortcut is ctrl+O.
+			Example:
+			Years | Numbers |
+			1956  | 38      |
+			1957  | 53      |
+			1958  | 64      |
+			1959  | 49      |
+			1960  | 32      |
+			1961  | 39      |
+
+		Save predictions
+			This function saves to the repository (by default C:/) the output file output.csv, with population prediction. When the file is saved, a message
+			will appear at the bottom of the main window.Shortcut is ctrl+S.
+
+		Change repository
+			With this function, you can change the repository where the output file will be saved. By default this repository is C:/.
+
+	Draw
+		Draw N
+			This function draws a graph of the change in the population according to the original data. The plot also shows a linear regression for this 
+			dataset.
+
+		Draw N predictions
+			This function predicts the change in population size and draws a graph based on this dataset.
+
+		Draw ? (growth coefficient)
+			This function draws a graph of the growth rate of the population according to the initial data.
+
+		Draw R (growth rate)
+			This function draws a graph of the specific population growth rate according to the initial data.
+
+	Table
+		Table
+			This function outputs a table with the original data.
+
+		Table predictions
+			This function outputs a table with population change prediction data.
+
+	Parametrs
+		Parametrs
+			With this function, you can change the parameters for predicting population change. And more specifically: prediction period, number
+			of curves, averaging factor. By default these values are 30, 1000, 5 respectively.
+
+	Help
+		Help
+			This function opens help (this document). 
